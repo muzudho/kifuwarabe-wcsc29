@@ -28,4 +28,5 @@ cls
 ### Run.
 kifuwarabe-wcsc29 --input "C:/shogi-record/go/eating/wcsc/永世名人/01eis-kak.kif" --output "C:/muzudho/shogi-record/rpm/wcsc/永世名人/01eis-kak.rpmove"
 kifuwarabe-wcsc29 --input "C:/shogi-record/go/eating/wcsc/１回戦/kifu.csa" --output "C:/muzudho/shogi-record/rpm/wcsc/１回戦/kifu.rpmove"
+echo %ERRORLEVEL%
 ```

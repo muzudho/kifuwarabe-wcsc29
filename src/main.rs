@@ -46,4 +46,7 @@ fn main() {
     } else {
         main_loop();
     }
+
+    // No panic is successful.
+    std::process::exit(0);
 }
