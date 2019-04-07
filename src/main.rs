@@ -19,8 +19,16 @@ fn get_extension_from_filename(filename: &str) -> Option<&str> {
 fn main() {
     // Command line arguments.
     let args = Arguments::parse();
-    let in_file = args.input_file.unwrap();
-    let out_file = args.output_file.unwrap();
+
+
+    let in_file = match args.input_file {
+        Some(x) => x,
+        None => "".to_string()
+    };
+    let out_file = match args.output_file {
+        Some(x) => x,
+        None => "".to_string()
+    };
 
     if !in_file.is_empty() && ! out_file.is_empty() {
         // 棋譜解析。
@@ -35,7 +43,6 @@ fn main() {
             }
             _ => {print!("Pass extension: {}", ext)}
         }
-
     } else {
         main_loop();
     }
