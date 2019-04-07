@@ -4,3 +4,5 @@ version = "0.1.0"
 authors = ["むずでょ <muzudho1@gmail.com>"]
 
 [dependencies]
+kifuwarabe_wcsc29_lib = { git = "https://github.com/muzudho/rust-kifuwarabe-wcsc29-lib" }
+getopts = "0.2"
