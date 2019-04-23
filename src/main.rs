@@ -5,8 +5,8 @@ mod arguments;
 
 use arguments::*;
 use kifuwarabe_wcsc29_lib::*;
-use kifuwarabe_wcsc29_lib::kif_conv::kif_converter::KifConverter;
-use kifuwarabe_wcsc29_lib::csa_conv::csa_converter::CsaConverter;
+use kifuwarabe_wcsc29_lib::kifu_kif::kif_converter::KifConverter;
+use kifuwarabe_wcsc29_lib::kifu_csa::csa_converter::CsaConverter;
 use std::ffi::OsStr;
 use std::path::Path;
 
