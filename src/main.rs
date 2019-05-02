@@ -35,11 +35,11 @@ fn main() {
     };
 
     if !in_file.is_empty() && ! tape_fragment_file_for_write.is_empty() {
-        // 棋譜解析。
-        let extension = get_extension_from_filename(&in_file).unwrap().to_uppercase();
-
         // The application contains all immutable content.
         let app = Application::new();
+        
+        // 棋譜解析。
+        let extension = get_extension_from_filename(&in_file).unwrap_or_else(|| panic!(app.comm.panic("Fail. get_extension_from_filename."))).to_uppercase();
 
         // Position.
         let mut position = Position::new_honshogi_origin();
@@ -54,7 +54,7 @@ fn main() {
         match extension.as_str() {
             "KIF" => {
                 // Training data.
-                let ktape = KifTape::from_file(&in_file);
+                let ktape = KifTape::from_file(&in_file, &app);
 
                 // Play out.
                 KifConverter::play_out_kifu_tape(&ktape, &mut position, &mut deck, &app);
@@ -64,7 +64,7 @@ fn main() {
             },
             "CSA" => {
                 // Training data.
-                let ctape = CsaTape::from_file(&in_file, &app.comm);
+                let ctape = CsaTape::from_file(&in_file, &app);
 
                 // Play out.
                 CsaConverter::play_out_csa_tape(&ctape, &mut position, &mut deck, &app);
