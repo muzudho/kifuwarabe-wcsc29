@@ -1,5 +1,7 @@
 # kifuwarabe-wcsc29
 
+ディレクトリ構成を合わせろ。設定ファイルを書け。
+
 ```Shell
 ### Example.
 cd C:/muzudho/projects_rust/kifuwarabe-wcsc29

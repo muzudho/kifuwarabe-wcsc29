@@ -1,0 +1,8 @@
+{
+    "kifuwarabe_wcsc29_master_config_path": "C:/muzudho/wcsc29-master/config/kifuwarabe-wcsc29-master.json",
+    "logging": {
+        "directory": "C:/muzudho/wcsc29-master/logs",
+        "file_base_name": "kw29",
+        "file_extension": ".log"
+    }
+}

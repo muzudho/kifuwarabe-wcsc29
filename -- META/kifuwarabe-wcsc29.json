@@ -1,27 +1,21 @@
 {
-	"expansion" : {
-		"go" : "C:/shogi-record/expansion-go",
-		"went" : "C:/shogi-record/expansion-went",
-		"output" : "C:/shogi-record/formation-go"
+	"expansion": {
+		"go": "C:/muzudho/wcsc29-master/shogi-record/expansion-go",
+		"went": "C:/muzudho/wcsc29-master/shogi-record/expansion-went",
+		"output": "C:/muzudho/wcsc29-master/shogi-record/formation-go"
 	},
-
-	"formation" : {
-		"go" : "C:/shogi-record/formation-go",
-		"went" : "C:/shogi-record/formation-went",
-		"output" : "C:/shogi-record/eating-go"
+	"formation": {
+		"go": "C:/muzudho/wcsc29-master/shogi-record/formation-go",
+		"went": "C:/muzudho/wcsc29-master/shogi-record/formation-went",
+		"output": "C:/muzudho/wcsc29-master/shogi-record/eating-go"
 	},
-
-	"eating" : {
-		"go" : "C:/shogi-record/eating-go",
-		"went" : "C:/shogi-record/eating-went",
-		"output" : "C:/muzudho/shogi-record/tape-fragments"
+	"eating": {
+		"go": "C:/muzudho/wcsc29-master/shogi-record/eating-go",
+		"went": "C:/muzudho/wcsc29-master/shogi-record/eating-went",
+		"output": "C:/muzudho/wcsc29-master/shogi-record/tape-fragments"
 	},
-	
-	"training": "C:/muzudho/shogi-record/training",
-
-    "learning": "C:/muzudho/shogi-record/learning",
-
-    "tape_fragments": "C:/muzudho/shogi-record/tape-fragments",
-		
-	"kifuwarabe_wcsc29_exe_path_for_read_kifu" : "C:/muzudho/software-computer-shogi/kifuwarabe-wcsc29/kifuwarabe-wcsc29.exe"
+	"training": "C:/muzudho/wcsc29-master/shogi-record/training",
+	"learning": "C:/muzudho/wcsc29-master/shogi-record/learning",
+	"tape_fragments": "C:/muzudho/wcsc29-master/shogi-record/tape-fragments",
+	"kifuwarabe_wcsc29_exe_path_for_read_kifu": "C:/muzudho/software-computer-shogi/kifuwarabe-wcsc29/kifuwarabe-wcsc29.exe"
 }
