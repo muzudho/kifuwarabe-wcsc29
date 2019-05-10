@@ -34,9 +34,9 @@ kifuwarabe-wcsc29 --input "C:/shogi-record/go/eating/wcsc/１回戦/kifu.csa" --
 
 kifuwarabe-wcsc29 --input "C:/shogi-record/formation-go/wcsc28_kifu/WCSC_F1_APR_MCB.csa" --output "C:/muzudho/shogi-record/rpm-manually/WCSC_F1_APR_MCB.csa"
 
-kifuwarabe-wcsc29 --input "C:/shogi-record/eating-go/formation-go$%wcsc28_kifu$%WCSC28_F4_QHA_APR.csa" --output "C:/muzudho/shogi-record/tape-fragments/formation-go$%wcsc28_kifu$%WCSC28_F4_QHA_APR.tapefrag"
+kifuwarabe-wcsc29 --input "C:/shogi-record/eating-go/formation-go$%wcsc28_kifu$%WCSC28_F4_QHA_APR.csa" --output "C:/muzudho/shogi-record/tape-fragments/formation-go$%wcsc28_kifu$%WCSC28_F4_QHA_APR.tapesfrag"
 
-kifuwarabe-wcsc29 --input "C:/shogi-record/eating-went/formation-go$%wcsc28_kifu$%WCSC28_F4_HNW_PAL.csa" --output "C:/shogi-record/eating-went/formation-go$%wcsc28_kifu$%WCSC28_F4_HNW_PAL.tapefrag"
+kifuwarabe-wcsc29 --input "C:/shogi-record/eating-went/formation-go$%wcsc28_kifu$%WCSC28_F4_HNW_PAL.csa" --output "C:/shogi-record/eating-went/formation-go$%wcsc28_kifu$%WCSC28_F4_HNW_PAL.tapesfrag"
 
 echo %ERRORLEVEL%
 ```

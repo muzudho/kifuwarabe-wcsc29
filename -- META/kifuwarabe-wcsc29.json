@@ -12,10 +12,10 @@
 	"eating": {
 		"go": "C:/muzudho/wcsc29-master/shogi-record/eating-go",
 		"went": "C:/muzudho/wcsc29-master/shogi-record/eating-went",
-		"output": "C:/muzudho/wcsc29-master/shogi-record/tape-fragments"
+		"output": "C:/muzudho/wcsc29-master/shogi-record/tapes-fragments"
 	},
 	"training": "C:/muzudho/wcsc29-master/shogi-record/training",
 	"learning": "C:/muzudho/wcsc29-master/shogi-record/learning",
-	"tape_fragments": "C:/muzudho/wcsc29-master/shogi-record/tape-fragments",
+	"tapes_fragments": "C:/muzudho/wcsc29-master/shogi-record/tapes-fragments",
 	"kifuwarabe_wcsc29_exe_path_for_read_kifu": "C:/muzudho/software-computer-shogi/kifuwarabe-wcsc29/kifuwarabe-wcsc29.exe"
 }

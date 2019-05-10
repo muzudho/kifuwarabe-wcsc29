@@ -12,6 +12,7 @@ use kifuwarabe_wcsc29_lib::sheet_music_format::kifu_csa::csa_converter::CsaConve
 use kifuwarabe_wcsc29_lib::sheet_music_format::kifu_csa::csa_tape::*;
 use kifuwarabe_wcsc29_lib::audio_compo::cassette_deck::*;
 use kifuwarabe_wcsc29_lib::instrument::position::*;
+use kifuwarabe_wcsc29_lib::media::cassette_tape::*;
 use std::ffi::OsStr;
 use std::path::Path;
 
@@ -49,9 +50,16 @@ fn main() {
         let mut position = Position::new_honshogi_origin(&app);
 
         // Deck.
-        let mut deck = CassetteDeck::new_for_tape_conversion(
-            &tape_file_name_without_extension,
+        let mut deck = CassetteDeck::new_empty(
             &app
+        );
+        deck.set_file_name_without_extension_of_tape_box(Slot::Learning, &tape_file_name_without_extension);
+        let mut tape = CassetteTape::new_facing_right(&app);
+        tape.set_file_full_name_without_extension(&tape_file_name_without_extension);
+        deck.add_tape_to_tape_box(
+            Slot::Learning,
+            tape,
+            &app,
         );
 
         match extension.as_str() {
@@ -63,7 +71,7 @@ fn main() {
                 KifConverter::play_out_kifu_tape(&ktape, &mut position, &mut deck, &app);
 
                 // Write.
-                deck.write_leaning_tape_fragment(position.get_board_size(), &app);
+                deck.write_leaning_tapes_fragment(position.get_board_size(), &app);
             },
             "CSA" => {
                 // Training data.
@@ -73,7 +81,7 @@ fn main() {
                 CsaConverter::play_out_csa_tape(&ctape, &mut position, &mut deck, &app);
 
                 // Write.
-                deck.write_leaning_tape_fragment(position.get_board_size(), &app);
+                deck.write_leaning_tapes_fragment(position.get_board_size(), &app);
             }
             _ => {print!("Pass extension: {}", extension)}
         }
