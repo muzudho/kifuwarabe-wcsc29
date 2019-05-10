@@ -41,6 +41,8 @@ fn main() {
         if args.debug {
             app.kifuwarabe_flag = true;
             app.comm.println("Debug on!");
+        } else {
+            app.kifuwarabe_flag = false;
         }
         
         // 棋譜解析。
@@ -50,17 +52,16 @@ fn main() {
         let mut position = Position::new_honshogi_origin(&app);
 
         // Deck.
-        let mut deck = CassetteDeck::new_empty(
-            &app
-        );
-        deck.set_file_name_without_extension_of_tape_box(Slot::Learning, &tape_file_name_without_extension);
-        let mut tape = CassetteTape::new_facing_right(&app);
-        tape.set_file_full_name_without_extension(&tape_file_name_without_extension);
-        deck.add_tape_to_tape_box(
-            Slot::Learning,
-            tape,
-            &app,
-        );
+        let mut deck = CassetteDeck::new_empty(&app);
+        {
+            deck.set_file_name_without_extension_of_tape_box(Slot::Learning, &tape_file_name_without_extension);
+
+            // ラーニング・テープ作成。
+            let mut tape = CassetteTape::new_facing_right(&app);
+            tape.set_file_full_name_without_extension(&tape_file_name_without_extension);
+            deck.add_tape_to_tape_box(Slot::Learning, tape, &app);
+            deck.seek_of_next_tape(Slot::Learning, &app);
+        }
 
         match extension.as_str() {
             "KIF" => {
