@@ -1,14 +1,14 @@
-# [PowerShell‚Å“ú•t‘®‚ÉƒJƒXƒ^ƒ€‘®ƒpƒ^[ƒ“‚ğw’è‚·‚é](https://tech.guitarrapc.com/entry/2013/02/09/030226)
+# [PowerShellï¿½Å“ï¿½ï¿½tï¿½ï¿½ï¿½ï¿½ï¿½ÉƒJï¿½Xï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pï¿½^ï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½wï¿½è‚·ï¿½ï¿½](https://tech.guitarrapc.com/entry/2013/02/09/030226)
 $oldDir = "old-$((Get-Date).ToString("yyyyMMdd-HHmm(ss)"))"
 
-# ŒÃ‚¢‚Ì‚ğ‘Ş”ğB
+# ï¿½Ã‚ï¿½ï¿½Ì‚ï¿½Ş”ï¿½ï¿½B
 New-Item "./$($oldDir)" -ItemType Directory
 Move-Item "./comm.log" "./$($oldDir)/comm.log"
 Move-Item "./kifuwarabe-wcsc29.exe" "./$($oldDir)/kifuwarabe-wcsc29.exe"
-Move-Item "./kifuwarabe-wcsc29-app-config.json" "./$($oldDir)/kifuwarabe-wcsc29-app-config.json"
+Move-Item "./kifuwarabe-wcsc29-exe-config.json" "./$($oldDir)/kifuwarabe-wcsc29-exe-config.json"
 
-# V‚µ‚¢‚Ì‚ğ‚Á‚Ä‚­‚éB
+# ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Ì‚ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½B
 Copy-Item "C:\muzudho\projects_rust\kifuwarabe-wcsc29\target\release\kifuwarabe-wcsc29.exe" "./kifuwarabe-wcsc29.exe"
-Copy-Item "C:\muzudho\projects_rust\kifuwarabe-wcsc29\kifuwarabe-wcsc29-app-config.json" "C:\muzudho\projects_rust\kifuwarabe-wcsc29\target\release\kifuwarabe-wcsc29-app-config.json"
-Copy-Item "C:\muzudho\projects_rust\kifuwarabe-wcsc29\kifuwarabe-wcsc29-app-config.json" "C:\muzudho\projects_rust\kifuwarabe-wcsc29\target\debug\kifuwarabe-wcsc29-app-config.json"
-Copy-Item "C:\muzudho\projects_rust\kifuwarabe-wcsc29\kifuwarabe-wcsc29-app-config.json" "./kifuwarabe-wcsc29-app-config.json"
+Copy-Item "C:\muzudho\projects_rust\kifuwarabe-wcsc29\kifuwarabe-wcsc29-exe-config.json" "C:\muzudho\projects_rust\kifuwarabe-wcsc29\target\release\kifuwarabe-wcsc29-exe-config.json"
+Copy-Item "C:\muzudho\projects_rust\kifuwarabe-wcsc29\kifuwarabe-wcsc29-exe-config.json" "C:\muzudho\projects_rust\kifuwarabe-wcsc29\target\debug\kifuwarabe-wcsc29-exe-config.json"
+Copy-Item "C:\muzudho\projects_rust\kifuwarabe-wcsc29\kifuwarabe-wcsc29-exe-config.json" "./kifuwarabe-wcsc29-exe-config.json"

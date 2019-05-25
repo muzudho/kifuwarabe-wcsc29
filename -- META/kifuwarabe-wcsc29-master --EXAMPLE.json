@@ -1,0 +1,12 @@
+{
+	"kifuwarabe_wcsc29_opt" : "C:/muzudho/software-computer-shogi/kifuwarabe-wcsc29",
+	"converter_var_lib" : "C:/muzudho/wcsc29-master/converter",
+
+	"training": "C:/muzudho/wcsc29-master/shogi-record/training",
+
+    "learning": "C:/muzudho/wcsc29-master/shogi-record/learning",
+
+	"book": "C:/muzudho/wcsc29-master/shogi-record/book",
+
+    "tapes_fragments": "C:/muzudho/wcsc29-master/shogi-record/tapes-fragments"
+}
