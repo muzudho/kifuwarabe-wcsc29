@@ -65,7 +65,7 @@ dependencies = [
 [[package]]
 name = "kifuwarabe_wcsc29_lib"
 version = "0.1.0"
-source = "git+https://github.com/muzudho/rust-kifuwarabe-wcsc29-lib#8873e5427bd938faa5b5288e83d4c5c3475f5eaf"
+source = "git+https://github.com/muzudho/rust-kifuwarabe-wcsc29-lib#02e783c0328c6e0e6c36ef401997183a93b5d67b"
 dependencies = [
  "chrono 0.4.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "getopts 0.2.19 (registry+https://github.com/rust-lang/crates.io-index)",
