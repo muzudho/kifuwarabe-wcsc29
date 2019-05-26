@@ -2,19 +2,23 @@
 
 ディレクトリ構成を合わせろ。設定ファイルを書け。
 
+いっぱつコンパイルセット☆（＾～＾）
+
 ```Shell
-### Example.
-cd C:/muzudho/projects_rust/kifuwarabe-wcsc29
 cls
- 
-### Compile.
-### Library update.
+set RUST_BACKTRACE=1
+cd C:/muzudho/projects_rust/rust-kifuwarabe-wcsc29-lib
+cargo update
+cargo clippy --example main
+cargo build --release
+cd C:/muzudho/projects_rust/kifuwarabe-wcsc29
 cargo update
 cargo clippy
 cargo build --release
- 
+```
+
+```Shell
 ### Run.
-set RUST_BACKTRACE=1
 cargo run --release
 ```
  
