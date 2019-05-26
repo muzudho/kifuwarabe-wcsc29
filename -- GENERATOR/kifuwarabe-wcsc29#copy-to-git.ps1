@@ -37,19 +37,11 @@ function Copy-Dir($src, $dst) {
 	Copy-Item $src $dst -Recurse
 }
 
-# ファイルの移動。
-function Move-File($src, $dst) {
+# ファイル、ディレクトリーの移動。
+function Move-Entry($src, $dst) {
 	if (Test-Path $src) {
 		Write-Host "Move    : [$($src)] --> [$($dst)]."
 		Move-Item $src $dst
-	}
-}
-
-# ディレクトリーの移動。
-function Move-File($src, $dst) {
-	if (Test-Path $src) {
-		Write-Host "Move    : [$($src)] --> [$($dst)]."
-		Move-Item $src $dst -Recurse
 	}
 }
 
