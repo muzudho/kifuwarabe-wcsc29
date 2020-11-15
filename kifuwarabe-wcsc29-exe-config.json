@@ -1,7 +1,7 @@
 {
-    "kifuwarabe_wcsc29_master_config_path": "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/config/kifuwarabe-wcsc29-master.json",
+    "kifuwarabe_wcsc29_master_config_path": "C:/Users/Server/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/config/kifuwarabe-wcsc29-master.json",
     "logging": {
-        "directory": "C:/muzudho/wcsc29-master/logs",
+        "directory": "C:/Users/Server/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/logs",
         "file_base_name": "kw29",
         "file_extension": ".log"
     }
