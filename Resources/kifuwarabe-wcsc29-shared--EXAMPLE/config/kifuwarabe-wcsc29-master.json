@@ -1,12 +1,8 @@
 {
-	"kifuwarabe_wcsc29_opt" : "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-bin/kifuwarabe-wcsc29",
-	"converter_var_lib" : "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/converter",
-
-	"training": "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/shogi-record/training",
-
-    "learning": "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/shogi-record/learning",
-
-	"book": "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/shogi-record/book",
-
-    "tapes_fragments": "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/shogi-record/tapes-fragments"
+	"kifuwarabe_wcsc29_opt" : "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29/target/release",
+	"converter_var_lib" 	: "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/converter",
+	"training"				: "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/shogi-record/training",
+    "learning"				: "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/shogi-record/learning",
+	"book"					: "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/shogi-record/book",
+    "tapes_fragments"		: "C:/Users/むずでょ/Documents/GitHub/kifuwarabe-collection/kifuwarabe-wcsc29-shared/shogi-record/tapes-fragments"
 }
